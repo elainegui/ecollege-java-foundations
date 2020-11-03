@@ -3,7 +3,7 @@ package eCollegeJava;
 public class PrimitivesConversionECollege {
 	public static void main(String[] args) {
 		/*int num1 = 53;
-		
+
 		int num2 = 47;
 		byte num3;
 		num3 = (num1 + num2);*/
@@ -58,5 +58,14 @@ public class PrimitivesConversionECollege {
 		// float f1 = 2.94; // 2.94 is a double type which cannot fit into a float
 		// variable.
 		// The F after the number tells the compiler it is a float type
+
+		byte w = 10;
+		// w = w + 1000; //does not compile byte+int=int
+		w += 10; // cast //w = (byte) (10+1000)
+		// we cannot store 1010 in byte, so there will be truncation of the byte //the
+		// answer will be different
+		// byte: -128 to 127
+		System.out.println("w = " + w);
+
 	}
 }
