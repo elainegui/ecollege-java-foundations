@@ -2,6 +2,7 @@ package eCollegeJava;
 
 public class JFT4Ex3 {
 	public static void main(String[] args) {
+		// salary report
 		String employeeName = "Bryan Haynes";
 		String PPSNo = "6464514D";
 		String department = "IT";
