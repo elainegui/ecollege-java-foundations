@@ -9,7 +9,7 @@ public class JFT4Ex4 {
 		System.out.println("Type in the total minutes:");
 		int minutes = sc.nextInt();
 		System.out.println("Hours: " + minutes / 60 + " Minutes: " + minutes % 60);
-
+		sc.close();
 	}
 
 }

@@ -13,6 +13,11 @@ public class JTF4Ex5 {
 		System.out.println("The interest rate is 0.05.");
 		System.out.println("The interest earned is " + investiment * 0.05);
 		System.out.println("The value of the investiment is: " + (investiment + (investiment * 0.05)) + " euro.");
+		sc.close();
 	}
+
+	// fffd
+
+	// dff
 
 }

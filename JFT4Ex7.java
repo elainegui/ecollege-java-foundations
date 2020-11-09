@@ -14,6 +14,7 @@ public class JFT4Ex7 {
 		System.out.println("Square feet: " + (length * width));
 		System.out.println("Square yards: " + (length * width) / 9);
 		System.out.println("Cost of carpeting in square yards: " + 37.99 * ((length * width) / 9) + " euro.");
+		sc.close();
 	}
 
 }

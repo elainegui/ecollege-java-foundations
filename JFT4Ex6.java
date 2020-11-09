@@ -14,6 +14,7 @@ public class JFT4Ex6 {
 		System.out.println("No of 10's: " + (money % 20) / 10);
 		System.out.println("No of 5's: " + ((money % 20) % 10) / 5);
 		System.out.println("No of 1's: " + (((money % 20) % 10) % 5));
+		sc.close();
 	}
 
 }
