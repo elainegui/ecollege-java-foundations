@@ -14,17 +14,17 @@ public class Webinars {
 	}
 	/*
 	Q35: What is the value of x and y (if any)?
-
+	
 	A: 10 10
 	B: 0 10
 	C: 1000 10
 	D: 10 1000
 	E: The program fails to compile
 	F: None of these answers are correct
-	
+
 	*/
 
-	/*Answer: That code will compile. The *= indicates thar a cast is putting automatically by the compiler.
+	/*Answer: That code will compile. The *= indicates that a cast is putting automatically by the compiler.
 	Don't worry about the loss of precision
 	*/
 }
