@@ -1,5 +1,7 @@
 package eCollegeJava;
 
+import java.util.ArrayList;
+
 public class ArrayListWithoutGenerics {
 
 	public static void main(String[] args) {
@@ -20,5 +22,11 @@ public class ArrayListWithoutGenerics {
 
 			System.out.println("Part number : " + partNumber);
 		}*/
+
+		ArrayList myFriends = new ArrayList();
+		//no compiler error
+		//That's java4 , when Generics did not exist
+		//if we do nor specify the data type the array list will store Object types
+
 	}
 }
