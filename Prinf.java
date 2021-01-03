@@ -49,7 +49,28 @@ public class Prinf {
 		System.out.printf("\nMy age is: %.1f", age);
 		//	System.out.printf("My age is: %d", age);
 
-		System.out.printf("\nMy age is: %.1f", age, number1);
+		System.out.printf("\nMy age is: %.1f\n", age, number1);
+
+		System.out.printf("The toral is %.2f%n", 23.35);
+		System.out.printf("The toral is %.1f%n", 23.35);
+		System.out.printf("The toral is %.3f%n", 23.35);
+
+		//System.out.printf("*%s*", "books");
+		//System.out.printf("%s%s%s\n", 4, "*", "books", 4, "*");
+
+		//System.out.printf("%*s", 40 + strlen("Name2") / 2, "Name2", 40 - strlen("Name2") / 2, "");
+		//System.out.printf("***********%s************", "books");
+		//System.out.printf("%10s%s%10s", "**********", "books", "**********");
+		//System.out.printf("%4s%s%4s", "**********", "books", "**********");
+
+		String format = "|%1$-10s|%2$-10s|%3$-20s|\n";
+		System.out.format(format, "FirstName", "Init.", "LastName");
+		System.out.format(format, "Real", "", "Gagnon");
+		System.out.format(format, "John", "D", "Doe");
+
+		String ex[] = { "John", "F.", "Kennedy" };
+
+		System.out.format(String.format(format, (Object[]) ex));
 
 	}
 
