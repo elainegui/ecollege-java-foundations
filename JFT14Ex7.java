@@ -13,7 +13,7 @@ public class JFT14Ex7 {
 
 	static void writeToFile() {
 		//create a file
-		File myFile = new File("C:\\Users\\Elaine\\Desktop\\MyPoem.txt");
+		File myFile = new File("C:\\Users\\Elaine\\Desktop\\ecollege\\MyPoem.txt");
 		try {
 			if (myFile.createNewFile()) {
 				System.out.println("File created: " + myFile.getName());
