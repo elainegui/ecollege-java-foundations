@@ -34,6 +34,8 @@ public class JFT14Ex5 {
 
 		}
 
+		sc.close();
+
 	}
 
 }

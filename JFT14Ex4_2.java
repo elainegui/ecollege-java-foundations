@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class JFT14Ex4_2 {
 	public static void main(String[] args) {
-
+		Scanner scanner = new Scanner(System.in);
 		//array
 		String[] names = { "Cork", "Athlone", "Limerick", "Sligo", "Dublin" };
 
@@ -18,7 +18,7 @@ public class JFT14Ex4_2 {
 		}
 
 		//user keyboard input object
-		Scanner scanner = new Scanner(System.in);
+
 		int destNo = 0;
 
 		//is the input data correct?
@@ -55,5 +55,6 @@ public class JFT14Ex4_2 {
 				System.out.println("A value from 1-5 should be entered.");
 			}
 		}
+		scanner.close();
 	}
 }
