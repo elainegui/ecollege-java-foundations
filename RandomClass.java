@@ -8,7 +8,7 @@ public class RandomClass {
 	public static void main(String[] args) {
 		// Random class
 		//stored in the java.util package
-		
+
 		Random r = new Random();
 		int randomNo = r.nextInt(6);
 		//the nextInt(int bound) generates a random number between 0 (inclusive) and the specified value (exclusive)

@@ -9,7 +9,7 @@ public class JFT6Ex8 {
 		System.out.println("Type in the student's grade (with decimals):");
 		float grade = sc.nextFloat();
 		if (grade > 100) {
-			System.out.println("Pleas type a vaid grade");
+			System.out.println("Please type a vaid grade");
 		} else if (grade >= 85) {
 			System.out.println("Grade achieved: A");
 		} else if (grade >= 70) {

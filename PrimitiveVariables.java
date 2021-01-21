@@ -14,7 +14,7 @@ public class PrimitiveVariables {
 		long bytes = 0b11010010_01101001_10010100_10010010;
 
 		// operators
-		// int xy = 0 / 0; //exception. Divide by zero
+		int xy = 0 / 0; //exception. Divide by zero
 	}
 
 }

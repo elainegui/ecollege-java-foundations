@@ -26,11 +26,31 @@ public class JFT5Ex1 {
 		// Q6: Do I need a cast?
 		int k = 45000;
 		float f = k;
-		
+
 		// Q7: Do I need a cast?
 		float ff = 1.5f;
 		int z = ff; //each have 32 bits, however float is bigger than int
 		*/
+
+		/*short sh = 45;
+		double d1 = sh;
+
+		char ch1 = sh;
+		
+		int i1 = 34;
+		double d = i1;
+
+		short sh2 = i1;
+		
+		long l1 = 66l;
+		int i2 = l1;
+		
+		float f1 = 4.45f;
+		long l2 = f1;
+		
+		long l3 = 55l;
+		float f2 = l3;*/
+
 	}
 
 }

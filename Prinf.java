@@ -49,21 +49,27 @@ public class Prinf {
 		System.out.printf("\nMy age is: %.1f", age);
 		//	System.out.printf("My age is: %d", age);
 
+		//the %f considers the last two decimals. If the last decimal is >=5, the first decimal is added by 1
+		//the %f result will be a number with one decimal
+
 		System.out.printf("\nMy age is: %.1f\n", age, number1);
 
-		System.out.printf("The toral is %.2f%n", 23.35);
+		System.out.printf("The total is %.2f%n", 23.356);
 		System.out.printf("The toral is %.1f%n", 23.35);
 		System.out.printf("The toral is %.3f%n", 23.35);
 
-		//System.out.printf("*%s*", "books");
-		//System.out.printf("%s%s%s\n", 4, "*", "books", 4, "*");
+		System.out.printf("*%s*", "books");
+		System.out.println();
+		System.out.printf("%s%s%s\n", 4, "*", "books", 4, "*");
+		//the 1st 4 is concatenated with the next string
 
-		//System.out.printf("%*s", 40 + strlen("Name2") / 2, "Name2", 40 - strlen("Name2") / 2, "");
-		//System.out.printf("***********%s************", "books");
-		//System.out.printf("%10s%s%10s", "**********", "books", "**********");
-		//System.out.printf("%4s%s%4s", "**********", "books", "**********");
+		//System.out.printf("%*s", 40); //exception
+		//System.out.printf("%*s", 40 + ("Name2").length() / 2, "Name2", 40 - ("Name2").length() / 2, "");
+		System.out.printf("***************%s***************%n", "books");
+		System.out.printf("%10s%s%10s%n", "***************", "books", "***************");
+		System.out.printf("%4s%s%4s%n", "*", "books", "*");
 
-		String format = "|%1$-10s|%2$-10s|%3$-20s|\n";
+		String format = "|%1$-10s|%2$-10s|%3$-20s|\n"; //the $ symbol means the order of the output
 		System.out.format(format, "FirstName", "Init.", "LastName");
 		System.out.format(format, "Real", "", "Gagnon");
 		System.out.format(format, "John", "D", "Doe");

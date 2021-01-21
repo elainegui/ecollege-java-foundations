@@ -37,7 +37,7 @@ public class ArrayListTutorDemo {
 		*/
 
 		//Example5
-		List<CD> myCDs5 = new ArrayList<CD>();
+		List myCDs5 = new ArrayList();
 		myCDs5.add(new CD());
 
 		//Example9
@@ -47,6 +47,34 @@ public class ArrayListTutorDemo {
 		//Example 10
 		//ArrayList myCDs7 = new List();
 
+		List<String> colloquialisms = new ArrayList<String>(2);
+		//number 2 ensures minimum capacity for the ArrayList
+		colloquialisms.add("How are ya?");
+		colloquialisms.add("Top man");
+		colloquialisms.add("Nice one");
+		colloquialisms.add("Sorted");
+
+		for (String s : colloquialisms) {
+			System.out.println(s);
+		}
+
+		/*ArrayList things = new ArrayList();
+		things.add(new ArrayListTutorDemo());
+		ArrayListTutorDemo myArray = things.get(0);
+		*/
+		//the call to get(0) is ok // but the compiler does not know that the item added was a type of ArrayListTutorDemo
+
+		ArrayList<Integer> id = new ArrayList<>();
+		id.add(1); // [1]
+		//id.add("student id"); // does not compile
+		id.add(1, 8);
+		System.out.println("id list: " + id);
+
+		List<Object> list1 = new ArrayList<>();
+		list1.add(0, "element1"); // ["element1"]
+		list1.add(1, "element2"); // ["element1", "element2"]
+		list1.add(3, "element2"); // throws IndexOutOfBoundsException
 	}
 	static class CD {}
+
 }
