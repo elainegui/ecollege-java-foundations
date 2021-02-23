@@ -10,13 +10,25 @@ public class RandomClass {
 		//stored in the java.util package
 
 		Random r = new Random();
-		int randomNo = r.nextInt(6);
+		int randomNo = r.nextInt(5);
 		//the nextInt(int bound) generates a random number between 0 (inclusive) and the specified value (exclusive)
 		System.out.println(randomNo);
-		randomNo = r.nextInt();
+
 		//nextInt()
-		//All 232 possible int values are produced with (approximately) equal probability.
+		randomNo = r.nextInt();
+		//All 2^32 possible int values are produced with (approximately) equal probability.
 		System.out.println(randomNo);
+
+		//nextDouble()  //also nextFloat() generates a random value between 0.0 and 1.0
+		double randomNoDouble = r.nextDouble();
+		System.out.println(randomNoDouble); //
+
+		Random rand = new Random(0);
+		int randInt = rand.nextInt();
+		System.out.println(randInt);
+
+		randInt = rand.nextInt(3);
+		System.out.println(randInt);
 
 		//nextBytes(byteArray)
 		//generates random bytes and places them into a user-supplied byte array

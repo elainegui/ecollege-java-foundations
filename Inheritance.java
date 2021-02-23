@@ -3,12 +3,12 @@ package eCollegeJava;
 public class Inheritance {
 //What is the output of the program?
 	public static void main(String[] args) {
-		Peach peach = new Peach();
-		System.out.println(peach.getOrigin());
+		//Peach peach = new Peach();
+		//System.out.println(peach.getOrigin());
 	}
 }
 
-class Peach extends Fruit {
+/*class Peach extends Fruit {
 
 	public Peach() {
 		this("unknown");
@@ -17,7 +17,7 @@ class Peach extends Fruit {
 	public Peach(String peach) {
 		super(peach);
 	}
-}
+}*/
 
 class Fruit {
 
@@ -27,11 +27,10 @@ class Fruit {
 		this.origin = origin;
 	}
 
-	public void setOrigin(String origin) {
+/*	public void setOrigin(String origin) {
 		this.origin = origin;
 	}
 
 	public String getOrigin() {
-		return origin;
-	}
+		return origin;*/
 }

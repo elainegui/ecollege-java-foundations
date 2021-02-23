@@ -1,12 +1,15 @@
 package eCollegeJava;
 
 public class ArraysClass {
+	byte x;
 
 	public static void main(String[] args) {
-		int x = 10, y = 2, z = 10;
-		System.out.println(x + y + z);
-	}
 
+		String[] e = new String[0];
+		/*int x = 10, y = 2, z = 10;
+		System.out.println(x + y + z);*/
+
+	}
 	/*static int x;
 	int y;
 	

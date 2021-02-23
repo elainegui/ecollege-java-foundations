@@ -29,7 +29,7 @@ public class InitializationVariables {
 		InitializationVariables in = new InitializationVariables();
 		in.test(7);
 	}
-	
+
 	public void test(final int x) {
 		int y = x;
 		x += 4;
@@ -41,5 +41,19 @@ public class InitializationVariables {
 		String myMessage;
 		System.out.println(myMessage.length());
 	}*/
+
+	//Does this code compile?
+	/*public static void main(String[] args) {
+		InitializationVariables i = new InitializationVariables();
+		i.admittanceCheck(18);
+	}
+
+	public void admittanceCheck(int age) {
+		final byte age = 18;
+		if (age > age) {
+			System.out.println("Sorry");
+		} else {
+			System.out.println("Good Evening");
+		}*/
 
 }

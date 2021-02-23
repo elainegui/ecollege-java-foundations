@@ -6,6 +6,7 @@ import java.util.List;
 public class ArrayListTutorDemo {
 
 	public static void main(String[] args) {
+
 		ArrayList myCDs = new ArrayList();
 
 		myCDs.add(new CD());
@@ -16,7 +17,7 @@ public class ArrayListTutorDemo {
 		can store different object types (a complex discussion for the Java Foundations course)*/
 
 		//Example2
-		java.util.ArrayList myCDs2 = new java.util.ArrayList();
+		java.util.ArrayList myCDs2 = new java.util.ArrayList<String>();
 		myCDs2.add("Billie Jean");
 		//this code compiles with warnings
 		//java uses unchecked or unsafe operations
@@ -70,10 +71,33 @@ public class ArrayListTutorDemo {
 		id.add(1, 8);
 		System.out.println("id list: " + id);
 
-		List<Object> list1 = new ArrayList<>();
-		list1.add(0, "element1"); // ["element1"]
-		list1.add(1, "element2"); // ["element1", "element2"]
-		list1.add(3, "element2"); // throws IndexOutOfBoundsException
+		/*	List<Object> list1 = new ArrayList<>();
+			list1.add(0, "element1"); // ["element1"]
+			list1.add(1, "element2"); // ["element1", "element2"]
+			list1.add(3, "element2"); // throws IndexOutOfBoundsException
+		*/
+
+		//what happens when you try to compile and run this class?
+		/*List<String> artists = new ArrayList<>();
+		try {
+			artists.add(1, "Will Biteman");
+			artists.add(2, "Hermann Longlegs");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		for (String artist : artists) {
+			System.out.println(artist);
+		}*/
+
+		//What exception will be thrown if the program is invoked without arguments?
+		/*try {
+			int count = Integer.parseInt(args[0]);
+		} catch (NumberFormatException e) {
+			System.err.println("Error: Not a number");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}*/
+
 	}
 	static class CD {}
 
