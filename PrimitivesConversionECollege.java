@@ -260,5 +260,16 @@ public class PrimitivesConversionECollege {
 		noOfBallons = h += 5 + 2;
 
 		System.out.println(noOfBallons);
+
+		// Question
+		/* What is the output of the following code? */
+		/*
+		 * byte abyte = 40, bbyte = 50;
+		 * byte sumbyte = (byte) a + b;
+		 * System.out.println(sumbyte);
+		 */
+
+
+
 	}
 }
